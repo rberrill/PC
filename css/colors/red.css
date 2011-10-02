@@ -1,0 +1,56 @@
+div#header .logo {
+	background: url('../../images/colors/red/logo.png') no-repeat top right;
+}
+div.small_right_column ul.arrows li a.ui-state-active { 
+	background: url('../../images/colors/red/arrow_down.png') no-repeat left;
+}
+div#homepage div.specials a.full_menu {
+	background: url('../../images/colors/red/menu_icon.png') no-repeat top left;
+}
+div#feedback div.press ul li div.date {
+	background: url('../../images/colors/red/date_bg.png') no-repeat;
+}
+div#our_story div#facts ul li {
+	background: url("../../images/colors/red/bullet.png") no-repeat 0px 4px;		
+}
+div#contact_us #hq  ul li.mail  { background: url('../../images/colors/red/mail.png') no-repeat top left; }
+div#contact_us #hq ul li.phone  { background: url('../../images/colors/red/phone.png') no-repeat top left; }
+div#contact_us #hq ul li.fax    { background: url('../../images/colors/red/fax.png') no-repeat top left; }
+div#hours_location .location .details {
+	background: url('../../images/colors/red/location_icon.png') no-repeat top left;
+}
+div#blog a.rss span{
+	background: url('../../images/colors/red/rss.png') no-repeat;
+}
+div#blog .post .date,
+div#homepage #slides .nivo-caption p span {
+	background: url('../../images/colors/red/date_bg.png') no-repeat;
+}
+div#error_page div.error_wrap {
+	background: url("../../images/colors/red/404_circle.png") no-repeat center;
+}
+ul.triangles li {
+	background: url('../../images/colors/red/arrow_right.png') no-repeat 0px 7px;
+}
+ul.bullseye li {
+	background: url('../../images/colors/red/bullet.png') no-repeat 0px 7px;
+}
+ul.arrows li {
+	background: url('../../images/colors/red/arrow.png') no-repeat 0px 4px;
+}
+ul.checkmarks li {
+	background: url('../../images/colors/red/checkmark.png') no-repeat 0px 5px;
+}
+blockquote {
+	background: url("../../images/colors/red/quote.png") no-repeat top left;		
+}
+div.pricing_box.active .price{ background: url('../../images/colors/red/price_bg.png') no-repeat	top center; }
+div#location div.address {
+	background: url('../../images/colors/red/location_icon.png') no-repeat top left;
+}
+div#items .content h4 span {		
+	background: #d94848;
+}
+div#header ul#nav li.active a {
+	background: #d94848;
+}

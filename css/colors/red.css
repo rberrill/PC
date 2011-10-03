@@ -51,6 +51,6 @@ div#location div.address {
 div#items .content h4 span {		
 	background: #d94848;
 }
-div#header ul#nav li.active a {
+div#header ul#nav li.current-menu-item a {
 	background: #d94848;
 }

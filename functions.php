@@ -30,14 +30,14 @@ if (function_exists("add_theme_support")) {
 register_nav_menu('primary','Primary Menu');
 
 function primaryMenu() {
-    echo '<div id="navwrap" class="menu-header"><ul id="menu-primary" class="sf-menu">';
+    echo '<ul id="nav">';
     echo wp_list_pages(array(
                             'depth' => 0,
                             'echo' => false,
                             'sort_column'  => 'menu_order',
                             'title_li' => null,
                         ));
-    echo '</ul></div>';
+    echo '</ul>';
 }
 
 function addOurScripts() {

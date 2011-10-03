@@ -1,18 +1,13 @@
 <?php get_header(); ?>
-<div id="contentWrapper" class="container">
-    <div id="primaryContent">
-        <?php
-        if (have_posts()) {
-            get_template_part("content", "page");
-        } else {
-            get_template_part("content", "search");
-        }
-        ?>
+<!-- Start Page Content -->
+<div class="main_content">
+    <div class="page_heading">				
+        <h1><?php the_title(); ?></h1>
     </div>
-    <!-- End div primaryContent -->
-    <aside>
-        <?php get_sidebar(); ?>
-    </aside>
+
+    <div class="full">
+        <?php get_template_part("content", "page"); ?>
+    </div>
 </div>
-<!-- End div contentWrapper -->
+<!-- End Page Content -->
 <?php get_footer(); ?>

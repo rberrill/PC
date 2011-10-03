@@ -44,6 +44,7 @@ function addOurScripts() {
     if (!is_admin()) { // Add the scripts, but not to the wp-admin section.
         // Adjust the below path to where scripts dir is, if you must.
         $scriptdir = get_stylesheet_directory_uri()."/js/";
+        $styledir = get_stylesheet_directory_uri()."/css/";
 
         // Remove the wordpresss inbuilt jQuery.
         wp_deregister_script('jquery');
@@ -51,14 +52,24 @@ function addOurScripts() {
         // Lets use the one from Google AJAX API instead.
         wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', false, '1.6.2');
 
-        wp_register_script( 'superfish', $scriptdir.'sf/js/superfish.js', false, '1.4.8');
-        wp_register_script( 'sf_load', $scriptdir.'sf_load.js', false, '1.0.0');
+        wp_register_style( 'red', $styledir.'colors/red.css', false, '1.0.0');
+        wp_register_style( 'fancybox', $scriptdir.'fancybox/jquery.fancybox-1.3.4.css', false, '1.3.4');
+        wp_register_style( 'nivo', $styledir.'nivo-slider.css', false, '2.6');
+
+        wp_register_script( 'jquery_ui', $scriptdir.'jquery-ui-1.8.14.js', false, '1.4.8');
+        wp_register_script( 'nivo', $scriptdir.'jquery.nivo.slider.js', false, '1.8.14');
+        wp_register_script( 'fancybox', $scriptdir.'fancybox/jquery.fancybox-1.3.4.pack.js', false, '2.6');
+        wp_register_script( 'global', $scriptdir.'global.js', false, '1.3.4');
 
         //load the scripts and style.
         wp_enqueue_script('jquery');
-
-        wp_enqueue_script('superfish');
-        wp_enqueue_script('sf_load');
+        wp_enqueue_style('red');
+        wp_enqueue_style('fancybox');
+        wp_enqueue_style('nivo');
+        wp_enqueue_script('jquery_ui');
+        wp_enqueue_script('nivo');
+        wp_enqueue_script('fancybox');
+        wp_enqueue_script('global');
     } // end the !is_admin function
 } //end add_our_scripts function
 

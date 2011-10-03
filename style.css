@@ -42,7 +42,7 @@ div#header {
 }
 	div#header .logo {
 		margin-bottom: 35px;	
-		background: url('img/colors/lime/logo.png') no-repeat top right;
+		background: url('img/colors/red/logo.png') no-repeat top right;
 		padding-right: 26px;
 		height: 50px;
 		width: 130px;
@@ -255,7 +255,7 @@ div.small_right_column {
 	div.small_right_column ul.arrows li a:hover { color: #333; }
 		div.small_right_column ul.arrows li a.ui-state-active { 
 			font-weight: bold; 
-			background: url('img/colors/lime/arrow_down.png') no-repeat left;
+			background: url('img/colors/red/arrow_down.png') no-repeat left;
 		}
 div.large_right_column {
 	float: right;
@@ -330,7 +330,7 @@ div#homepage div#slider{
 				position: absolute;
 				right: -55px;
 				top: -12px;
-				background: url('img/colors/lime/date_bg.png') no-repeat;
+				background: url('img/colors/red/date_bg.png') no-repeat;
 				width: 71px;
 				color: #fff;
 				font-weight: bold;
@@ -548,7 +548,7 @@ div#homepage div#feedback {
 			}	
 			div#feedback div.press ul li div.date {
 				float: left;
-				background: url('img/colors/lime/date_bg.png') no-repeat;
+				background: url('img/colors/red/date_bg.png') no-repeat;
 				width: 71px;
 				color: #fff;
 				font-weight: bold;
@@ -632,7 +632,7 @@ div#our_story div#the_team div.team_detail {
 	}
 div#our_story div#facts ul { list-style: none; }
 	div#our_story div#facts ul li {
-		background: url("img/colors/lime/bullet.png") no-repeat 0px 4px;		
+		background: url("img/colors/red/bullet.png") no-repeat 0px 4px;		
 		padding-left: 25px;
 		padding-bottom: 12px;
 		font-size: 13px;
@@ -955,9 +955,9 @@ div#contact_us #hq { }
 			color: #666;
 		}
 		div#contact_us #hq ul li p { margin: 0; }
-		div#contact_us #hq ul li.mail  { background: url('img/colors/lime/mail.png') no-repeat top left; }
-		div#contact_us #hq ul li.phone  { background: url('img/colors/lime/phone.png') no-repeat top left; }
-		div#contact_us #hq ul li.fax    { background: url('img/colors/lime/fax.png') no-repeat top left; }
+		div#contact_us #hq ul li.mail  { background: url('img/colors/red/mail.png') no-repeat top left; }
+		div#contact_us #hq ul li.phone  { background: url('img/colors/red/phone.png') no-repeat top left; }
+		div#contact_us #hq ul li.fax    { background: url('img/colors/red/fax.png') no-repeat top left; }
 	div#contact_us #hq ul li.last { border: none; margin: 0; padding-bottom: 0; }
 div#contact_us #inquiries { padding: 15px 30px 25px 30px; }	
 	div#contact_us #inquiries a {
@@ -982,7 +982,7 @@ div#hours_location .location {
 }
 	div#hours_location .location .details {
 		float: left;
-		background: url('img/colors/lime/location_icon.png') no-repeat top left;
+		background: url('img/colors/red/location_icon.png') no-repeat top left;
 		padding-left: 45px;
 	}
 		div#hours_location .location .details h4{ font-size: 16px; margin-bottom: 10px; }
@@ -1057,7 +1057,7 @@ div#blog .post {
 }
 	div#blog .post .date {
 		float: left;
-		background: url('img/colors/lime/date_bg.png') no-repeat;
+		background: url('img/colors/red/date_bg.png') no-repeat;
 		width: 71px;
 		color: #fff;
 		font-weight: bold;
@@ -1297,7 +1297,7 @@ div#error_page {
 }
 	div#error_page div.error_wrap {
 		clear: both;
-		background: url("img/colors/lime/404_circle.png") no-repeat center;
+		background: url("img/colors/red/404_circle.png") no-repeat center;
 		overflow: hidden;	
 		margin: 0 auto;
 		width: 334px;
@@ -1425,28 +1425,33 @@ ul.numbered {
 }
 ul.numbered { list-style: decimal; padding-left: 18px; padding-top: 5px; }
 	ul.triangles li {
-		background: url('img/colors/lime/arrow_right.png') no-repeat 0px 7px;
+		background: url('img/colors/red/arrow_right.png') no-repeat 0px 7px;
 		padding-left: 15px;
 	}
 	ul.bullseye li {
-		background: url('img/colors/lime/bullet.png') no-repeat 0px 7px;
+		background: url('img/colors/red/bullet.png') no-repeat 0px 7px;
 		padding-left: 17px;
 	}
 	ul.arrows li {
-		background: url('img/colors/lime/arrow.png') no-repeat 0px 4px;
+		background: url('img/colors/red/arrow.png') no-repeat 0px 4px;
 		padding-left: 22px;
 	}
 	ul.checkmarks li {
-		background: url('img/colors/lime/checkmark.png') no-repeat 0px 5px;
+		background: url('img/colors/red/checkmark.png') no-repeat 0px 5px;
 		padding-left: 22px;
 	}
+        div.main_content blockquote p {
+	font-style: inherit;
+	font-size: inherit;
+	color: inherit;		
+        }
 blockquote {
 	display: block;
-	background: url("img/colors/lime/quote.png") no-repeat top left;
+	background: url("img/colors/red/quote.png") no-repeat top left;
 	padding-left: 40px;
 	margin: 26px 0px 35px 46px;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 15px;
 	color: #666;			
 }
 span.highlight {
@@ -1561,7 +1566,7 @@ div.pricing_box {
 		text-align: center;
 		margin: 0 auto;
 	}
-	div.pricing_box.active .price{ background: url('img/colors/lime/price_bg.png') no-repeat	top center; }
+	div.pricing_box.active .price{ background: url('img/colors/red/price_bg.png') no-repeat	top center; }
 		div.pricing_box .price h2{
 			font-size: 45px;
 			color: #fff;
@@ -1725,7 +1730,7 @@ Buttons
 	border: 1px solid #ccc;
 }
 input.button { padding-bottom: 5px; cursor: pointer; }
-.button.lime_green, .button.magenta, .button.orange, 
+.button.red_green, .button.magenta, .button.orange, 
 .button.purple ,.button.blue, .button.red, .button.yellow, 
 .button.green, .button.teal, .button.gray, .button.brown, 
 .button.black, .button.pink, .button.light_green,
@@ -1735,7 +1740,7 @@ input.button { padding-bottom: 5px; cursor: pointer; }
 	text-shadow: #999 0px 0px 2px;
 }
 	/* Vibrant Colors */
-	.button.lime_green   { background-position: 0px -27px; }
+	.button.red_green   { background-position: 0px -27px; }
 	.button.magenta 		 { background-position: 0px -54px; }
 	.button.orange 			 { background-position: 0px -81px; }
 	.button.purple 			 { background-position: 0px -108px; }

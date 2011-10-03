@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <title><?php wp_title('|', true, 'right'); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
-    <!-- Framework CSS -->  
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/blueprint/screen.css" type="text/css" media="screen, projection" />  
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/blueprint/print.css" type="text/css" media="print" />  
-        <!--[if IE]><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/blueprint/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->  
-    <!-- End Framework CSS -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
 </head>
@@ -19,31 +14,68 @@
             Template Loaded: <?php echo getTemplateName(); ?>
         </div>
     <?php } ?>
-    <div id="siteWrapper">
-        <header>
-            <div id="header" class="container">
-                <hgroup>
-                    <h1>
-                        <span>
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                <?php bloginfo( 'name' ); ?>
-                            </a>
-                        </span>
-                    </h1>
-                    <h2><?php bloginfo( 'description' ); ?></h2>
-                </hgroup>
-                <nav id="header">
-                    <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'primary', // Setting up the location for the main-menu, Main Navigation.
-                            'menu_class' => 'sf-menu', //Adding the class for dropdowns
-                            'container_id' => 'navwrap', //Add CSS ID to the containter that wraps the menu.
-                            'container_class' => 'menu-header',
-                            'fallback_cb' => 'primaryMenu', //if wp_nav_menu is unavailable, WordPress displays wp_page_menu function, which displays the pages of your blog.
-                                )
-                        );
-                    ?>
-                </nav>
+    
+    <!-- Start Page Container -->
+    <div id="container_wrap">
+
+        <!-- Start Header -->
+        <div id="header">
+
+            <!-- Start Logo -->
+            <div class="logo">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="" />
             </div>
-        </header>
-        
+            <!-- End Logo -->
+
+            <!-- Start Navigation -->
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our_story.html">Our Story</a></li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                    <ul>
+                        <li><a href="menu.html">Menu Variation 1</a></li>
+                        <li><a href="menu_2.html">Menu Variation 2</a></li>
+                        <li><a href="menu_3.html">Menu Variation 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="gallery.html">Galleries</a>
+                    <ul>
+                        <li><a href="gallery.html">Gallery Variation 1</a></li>
+                        <li><a href="gallery_2.html">Gallery Variation 2</a></li>
+                        <li><a href="gallery_3.html">Gallery Variation 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul>
+                        <li><a href="blog_item.html">Blog Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                    <ul>
+                        <li><a href="hours_locations.html">Hours &amp; Locations</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">HTML Styles</a>
+                    <ul>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="columns.html">Columns</a></li>
+                        <li><a href="boxes.html">Styled Boxes</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="tabs_toggles.html">Tabs / Toggles</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="full_width.html">Full Width</a></li>
+                        <li><a href="sidebar_large.html">Sidebar (large)</a></li>
+                        <li><a href="sidebar_small.html">Sidebar (small)</a></li>
+                        <li><a href="404.html">404</a></li>
+                    </ul>
+                </li>
+            </ul>	
+            <!-- End Navigation -->
+
+        </div>
+        <!-- End Header -->        

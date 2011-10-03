@@ -25,7 +25,7 @@ Global
 /* stripes_right.png                         */
 /*-------------------------------------------*/
 body {
-	background: #eeeeee url('img/backgrounds/grid.png') repeat top left;
+	background: #eeeeee url('img/backgrounds/stripes_left.png') repeat top left;
 	font-family: "Helvetica Neue", helvetica, sans-serif;
 	color: #676767;
 	font-size: 14px;

@@ -1,5 +1,4 @@
 div#header .logo {
-	background: url('../../img/colors/red/logo.png') no-repeat top right;
 }
 div.small_right_column ul.arrows li a.ui-state-active { 
 	background: url('../../img/colors/red/arrow_down.png') no-repeat left;
@@ -49,8 +48,8 @@ div#location div.address {
 	background: url('../../img/colors/red/location_icon.png') no-repeat top left;
 }
 div#items .content h4 span {		
-	background: #d94848;
+	background: #5f2431;
 }
 div#header ul#nav li.current-menu-item a {
-	background: #d94848;
+	background: #5f2431;
 }

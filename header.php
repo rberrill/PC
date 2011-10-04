@@ -23,7 +23,9 @@
 
             <!-- Start Logo -->
             <div class="logo">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="" />
+                <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="" />
+                </a>
             </div>
             <!-- End Logo -->
 
